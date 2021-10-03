@@ -1,0 +1,28 @@
+from tkinter import *
+window=Tk()
+window.title("Registration Form")
+window.maxsize(600,700)
+window.minsize(200,300)
+label1=Label(window,text="Name",font=20)
+label1.grid(row=20,column=1)
+label2=Label(window,text="Father's Name",font=20).grid(row=27,column=1)
+label3=Label(window,text="Mother's Name",font=20).grid(row=28,column=1)
+label4=Label(window,text="College Name",font=20).grid(row=29,column=1)
+label5=Label(window,text="Age",font=20).grid(row=35,column=1)
+label6=Label(window,text="Email",font=20).grid(row=40,column=1)
+label7=Label(window,text="Contact No",font=20).grid(row=41,column=1)
+
+# To get space in the column and for writting purpose we write e1
+e1=Entry(window,font=20,borderwidth=3,width=25).grid(row=20,column=2)
+e2=Entry(window,font=20,borderwidth=3,width=25).grid(row=27,column=2)
+e3=Entry(window,font=20,borderwidth=3,width=25).grid(row=28,column=2)
+e4=Entry(window,font=20,borderwidth=3,width=25).grid(row=29,column=2)
+e5=Entry(window,font=20,borderwidth=3,width=25).grid(row=35,column=2)
+e6=Entry(window,font=20,borderwidth=3,width=25).grid(row=40,column=2)
+e7=Entry(window,font=20,borderwidth=3,width=25).grid(row=41,column=2)
+
+r1=Radiobutton(text="Male",font=20,value=1).place(x=120,y=200)
+r2=Radiobutton(text="Female",font=20,value=2).place(x=180,y=200)
+btn=Button(window,text="SUBMIT",font=20,bg="blue",fg="orange")
+btn.place(x=150,y=250)
+window.mainloop()
